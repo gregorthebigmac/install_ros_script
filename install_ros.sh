@@ -5,9 +5,9 @@ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main
 && sudo apt-get update \
 && sudo apt upgrade -y \
 && sudo apt autoremove -y \
-&& sudo apt-get install -y ros-kinetic-desktop-full \
+&& sudo apt-get install -y ros-melodic-desktop-full \
 && sudo rosdep init \
 && rosdep update \
-&& echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc \
+&& echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc \
 && echo "All done! Rebooting your machine for changes to take effect!" \
 && sudo reboot
